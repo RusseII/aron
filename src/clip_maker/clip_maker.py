@@ -16,18 +16,10 @@ except Exception as e:
     from lib import db_connect
 
 
-current_dir = os.path.dirname(__file__)
-config_rel_path = '../../res/downloadsettings.cfg'
-config_abs_path = os.path.join(current_dir, config_rel_path)
-config = ConfigParser()
-config.read(config_abs_path)
 
-try:
-    output_file_location = config['Download Settings']['output_file_location'] + datetime.datetime.now().strftime("%Y.%d.%m") + '/'
-except Exception as e:
-    print('there was a problem accessing the downloadsettings.cfg file')
-    print(str(e))
-    sys.exit()
+
+output_file_location = './TwitchHighlightsOutput/' + datetime.datetime.now().strftime("%Y.%d.%m") + '/'
+
 
 
 class ClipMaker:

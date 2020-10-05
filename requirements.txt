@@ -11,10 +11,11 @@ moviepy==1.0.3
 numpy==1.19.2
 Pillow==7.2.0
 proglog==0.1.9
-pymongo==3.11.0
+pymongo[srv]==3.11.0
 pyparsing==2.4.7
 python-dateutil==2.8.1
 requests==2.24.0
 six==1.15.0
 tqdm==4.49.0
 urllib3==1.25.10
+
